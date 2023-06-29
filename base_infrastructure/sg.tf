@@ -4,11 +4,11 @@ resource "aws_security_group" "sg-1" {
   vpc_id      = aws_vpc.vpc-project-5.id
 
   ingress {
-    description      = "TLS from VPC"
-    from_port        = 22
-    to_port          = 22
-    protocol         = "tcp"
-    cidr_blocks      = [aws_vpc.vpc-project-5.cidr_block] 
+    description = "TLS from VPC"
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = [aws_vpc.vpc-project-5.cidr_block]
   }
   egress {
     from_port        = 0
@@ -19,6 +19,6 @@ resource "aws_security_group" "sg-1" {
   }
 
   tags = {
-    Name = "sg-1"
+    Name = var.sg_name  #"kunle-sg" #
   }
 }
