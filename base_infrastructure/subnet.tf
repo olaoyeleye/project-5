@@ -6,7 +6,7 @@ resource "aws_subnet" "Public-sub-1" {
   cidr_block        = "10.0.0.0/24"
 
   tags = {
-    Name = "Private-sub-1"
+    Name = "Public-sub-1"
   }
 }
 
@@ -16,7 +16,7 @@ resource "aws_subnet" "Public-sub-2" {
   cidr_block        = "10.0.1.0/24"
 
   tags = {
-    Name = "Private-sub-2"
+    Name = "Public-sub-2"
   }
 }
 
