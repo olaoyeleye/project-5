@@ -3,7 +3,7 @@
 resource "aws_db_subnet_group" "mariadb-subnet" {
   name        = "mariadb-subnet"
   description = "RDS subnet group"
-  subnet_ids  = [aws_subnet.Private-sub-3.id  ]
+  subnet_ids  = [aws_subnet.Private-sub-3.id ,aws_subnet.Public-sub-1.id ]
 }
 
 resource "aws_db_parameter_group" "mariadb-parameters" {
