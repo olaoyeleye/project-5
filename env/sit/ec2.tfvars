@@ -1,5 +1,10 @@
-ec2_key_name = "sit-machine"
+ec2_key_name = "sit-machine-1"
+ec2_key_name-2="sit-machine-2"
+ec2_key_name-3="sit-private-machine-3"
 sg_name      = "sg-kunle"
+RDS_PASSWORD ="Kehinde12"
+username ="kensko"
+
 ami          = "ami-0b27425e66fc807f"
 
 aws_region = "eu-west-1"
