@@ -30,9 +30,9 @@ resource "aws_db_instance" "mariadb" {
   multi_az                  = "false" # set to true to have high availability: 2 instances synchronized with each other
   vpc_security_group_ids    = [aws_security_group.sg-1.id]
   storage_type              = "gp2"
-  backup_retention_period   = 30                                          # how long you’re going to keep your backups
+  #backup_retention_period   = 30                                          # how long you’re going to keep your backups
   #availability_zone         = [aws_subnet.Private-sub-3.availability_zone] # prefered AZ
-  final_snapshot_identifier = "mariadb-final-snapshot"                    # final snapshot when executing terraform destroy
+  #final_snapshot_identifier = "mariadb-final-snapshot"                    # final snapshot when executing terraform destroy
   tags = {
     Name = "mariadb-instance"
   }
