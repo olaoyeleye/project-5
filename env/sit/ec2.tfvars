@@ -5,7 +5,8 @@ sg_name      = "sg-kunle"
 RDS_PASSWORD ="Kehinde12"
 username ="kensko"
 
-ami          = "ami-0b27425e66fc807f"
+ami          = "aami-01dd271720c1ba44f"
+            
 
 aws_region = "eu-west-1"
 key_name   = "techbleat-ket"
