@@ -1,3 +1,8 @@
+
+#variable "web" {}
+
+#web = ec2_key_name = "sit-machine-1" ? "dev-machine-1",""
+
 resource "aws_instance" "web-1" {
   ami           = var.ami
   key_name      = var.key_name
